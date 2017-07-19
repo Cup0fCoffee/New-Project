@@ -20,7 +20,7 @@ Scene2.choice2 = "Перезвонить в оффисе.";
 
 Scene3 = new Scene("Остаёшься дома.");
 Scene3.text = "У тебя выходной, ты не берешь трубку. Остаешься дома.";
-Scene3.choice1 = "Узнать у коллег, чего хотел начальник.";
+Scene3.choice1 = "Узнать у коллег, \n чего хотел начальник.";
 Scene3.choice2 = "Никому не звонить.";
 
 Final1 = new Scene("Смерть.");
@@ -52,6 +52,7 @@ document.getElementById("buttonL").style.display = "none";
 document.getElementById("buttonR").style.display = "none";
 
 
+
 document.getElementById("newGame").onclick = function () {
   currentScene = Scene1;
   document.getElementById("Menu").style.display = "none";
@@ -63,26 +64,13 @@ document.getElementById("newGame").onclick = function () {
   document.getElementById("buttonR").value = currentScene.choice2;
 };
 
-document.getElementById("continueGame").onclick = function () {
-  currentScene = readCookie("cookie");
-  document.getElementById("Menu").style.display = "none";
-  document.getElementById("MainText").style.display = "block";
-  document.getElementById("buttonL").style.display = "initial";
-  document.getElementById("buttonR").style.display = "initial";
-  document.getElementById("MainText").innerHTML = currentScene.text;
-  document.getElementById("buttonL").value = currentScene.choice1;
-  document.getElementById("buttonR").value = currentScene.choice2;
-}
 
 document.getElementById("buttonL").onclick = function () {
-  createCookie("testcookie", "kek", 1);
-  alert(readCookie("testcookie"));
   currentScene = currentScene.outcome1;
   changeScene();
 };
 
 document.getElementById("buttonR").onclick = function () {
-  createCookie("cookie", currentScene.outcome2, 1);
   currentScene = currentScene.outcome2;
   changeScene();
 };
@@ -109,28 +97,3 @@ document.getElementById("returnToMenu").onclick = function () {
   document.getElementById("returnToMenu").style.display = "none";
   document.getElementById("Menu").style.display = "block";
 };
-
-function createCookie(name,value,days) {
-	if (days) {
-		var date = new Date();
-		date.setTime(date.getTime()+(days*24*60*60*1000));
-		var expires = "; expires="+date.toGMTString();
-	}
-	else var expires = "";
-	document.cookie = name+"="+value+expires+"; path=/Users/Maxim/Desktop/New%20Project/basic%20html.html";
-}
-
-function readCookie(name) {
-	var nameEQ = name + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0;i < ca.length;i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1,c.length);
-		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-	}
-	return null;
-}
-
-function eraseCookie(name) {
-	createCookie(name,"",-1);
-}
