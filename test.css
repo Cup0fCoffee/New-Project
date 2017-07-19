@@ -6,10 +6,12 @@
   font-family: Comic Sans MS; /*Семейство шрифта или сам стиль*/
   /*color: #696969 /*#A9A9A9*/; /*Тускло-серый цвет текста*/
   color:red;
-  font-size:28px;
+  font-size:200%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  width: 80%;
-  margin-left: 10%;
+  padding-top: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
+
 }
 
 .BackG {
@@ -22,43 +24,58 @@
 #gameTitle {
   color:red;
   font-family: Comic Sans MS;
-  font-size:28px;
+  font-size:220%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 input.buttons {
-  width: 300px;
-  height: 50px;
+  /*width: 30%;
+  height: 100%;*/
   outline: none;
   border: none;
   text-transform: uppercase;  /*Все буквы имеют верхний регистр*/
-  font-size: 20px; /*Размер шрифта*/
+  font-size: 120%; /*Размер шрифта*/
   font-weight: 500; /*Жирность текста*/
   font-family: Comic Sans MS; /*Семейство шрифта или сам стиль*/
   color: #696969 /*#A9A9A9*/; /*Тускло-серый цвет текста*/
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #buttonL {
   /*background-image: url("img/Right.jpg");*/
   background-repeat:no-repeat;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-right: 5%;
+  margin-left: 0%;
+  margin-top: 15%;
+  margin-bottom: 0%;
 }
 #buttonR {
   /*background-image: url("img/Left.jpg");*/
   background-repeat:no-repeat;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-right: 0%;
+  margin-left: 5%;
+  margin-top: 15%;
+  margin-bottom: 0%;
+}
+#return{
+  margin-left: 89%;
+  margin-top: 0.5%;
+  border: none;
+  /*width: 9%;
+  height: 2%;*/
+  font-size: 100%;
+  font-weight: 500;
+  font-family: Comic Sans Ms;
+  color: #696969;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .center{
   text-align: center;
   list-style-type: none;
-  margin:0px;
+  margin:0%;
 }
 /*ul.center li{
   display: inline;
