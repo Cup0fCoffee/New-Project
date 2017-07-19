@@ -1,0 +1,94 @@
+#MainText {
+  text-align: center;  /*Положение текста*/
+  text-transform: uppercase;  /*Все буквы имеют верхний регистр*/
+  /*font-size: 35px; /*Размер шрифта*/
+  font-weight: 500; /*Жирность текста*/
+  font-family: Comic Sans MS; /*Семейство шрифта или сам стиль*/
+  /*color: #696969 /*#A9A9A9*/; /*Тускло-серый цвет текста*/
+  color:red;
+  font-size:200%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-top: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
+.BackG {
+  background-image: url("img/Vader2.jpg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  /*  background-color: black;*/
+}
+
+#gameTitle {
+  color:red;
+  font-family: Comic Sans MS;
+  font-size:220%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+input.buttons {
+  /*width: 30%;
+  height: 100%;*/
+  outline: none;
+  border: none;
+  text-transform: uppercase;  /*Все буквы имеют верхний регистр*/
+  font-size: 120%; /*Размер шрифта*/
+  font-weight: 500; /*Жирность текста*/
+  font-family: Comic Sans MS; /*Семейство шрифта или сам стиль*/
+  color: #696969 /*#A9A9A9*/; /*Тускло-серый цвет текста*/
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#buttonL {
+  /*background-image: url("img/Right.jpg");*/
+  background-repeat:no-repeat;
+  margin-right: 5%;
+  margin-left: 0%;
+  margin-top: 15%;
+  margin-bottom: 0%;
+}
+#buttonR {
+  /*background-image: url("img/Left.jpg");*/
+  background-repeat:no-repeat;
+  margin-right: 0%;
+  margin-left: 5%;
+  margin-top: 15%;
+  margin-bottom: 0%;
+}
+#return{
+  margin-left: 89%;
+  margin-top: 0.5%;
+  border: none;
+  /*width: 9%;
+  height: 2%;*/
+  font-size: 100%;
+  font-weight: 500;
+  font-family: Comic Sans Ms;
+  color: #696969;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.center{
+  text-align: center;
+  list-style-type: none;
+  margin:0%;
+}
+/*ul.center li{
+  display: inline;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px;
+}*/
+
+#returnToMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:99;
+}
