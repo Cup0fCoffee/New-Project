@@ -1,113 +1,34 @@
-function Scene(){
-  this.name = name;
-  this.text;
-  this.choice1;
-  this.choice2;
-  this.outcome1;
-  this.outcome2;
-}
-
-
-Scene1 = new Scene("Г“ГІГ°Г®.");
-Scene1.text = "Г“ГІГ°Г®. Г‡ГўГ®Г­Г®ГЄ Г®ГІ Г­Г Г·Г Г«ГјГ­ГЁГЄГ . ГЋГ­ ГЇГ°Г®Г±ГЁГІ Г­ГҐГ¬ГҐГ¤Г«ГҐГ­Г­Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  Г°Г ГЎГ®ГІГі.";
-Scene1.choice1 = "Г‚Г§ГїГІГј ГІГ°ГіГЎГЄГі.";
-Scene1.choice2 = "ГЏГ°Г®Г¤Г®Г«Г¦ГЁГІГј Г±ГЇГ ГІГј.";
-
-Scene2 = new Scene("Г‚ Г¬Г ГёГЁГ­ГҐ.");
-Scene2.text = "Г‹ГҐГ­ГЁГўГ® Г±Г®ГЎГЁГ°Г ГҐГёГјГ±Гї ГЁ ГҐГ¤ГҐГёГј. ГЏГ® Г¤Г®Г°Г®ГЈГҐ Г§ГўГ®Г­ГЁГІ ГІГҐГ«ГҐГґГ®Г­.";
-Scene2.choice1 = "Г‚Г§ГїГІГј ГІГ°ГіГЎГЄГі.";
-Scene2.choice2 = "ГЏГҐГ°ГҐГ§ГўГ®Г­ГЁГІГј Гў Г®ГґГґГЁГ±ГҐ.";
-
-Scene3 = new Scene("ГЋГ±ГІГ ВёГёГјГ±Гї Г¤Г®Г¬Г .");
-Scene3.text = "Г“ ГІГҐГЎГї ГўГ»ГµГ®Г¤Г­Г®Г©, ГІГ» Г­ГҐ ГЎГҐГ°ГҐГёГј ГІГ°ГіГЎГЄГі. ГЋГ±ГІГ ГҐГёГјГ±Гї Г¤Г®Г¬Г .";
-Scene3.choice1 = "Г“Г§Г­Г ГІГј Гі ГЄГ®Г«Г«ГҐГЈ, \n Г·ГҐГЈГ® ГµГ®ГІГҐГ« Г­Г Г·Г Г«ГјГ­ГЁГЄ.";
-Scene3.choice2 = "ГЌГЁГЄГ®Г¬Гі Г­ГҐ Г§ГўГ®Г­ГЁГІГј.";
-
-Final1 = new Scene("Г‘Г¬ГҐГ°ГІГј.");
-Final1.text = "Г’Г» ГЎГҐГ°ГҐГёГј ГІГ°ГіГЎГЄГі. ГЌГҐ Г§Г Г¬ГҐГ·Г ГҐГёГј ГїГ¬Гі Г­Г  Г¤Г®Г°Г®ГЈГҐ ГЁ ГўГ»Г«ГҐГІГ ГҐГёГј Г­Г  ГўГ±ГІГ°ГҐГ·ГЄГі. Г‘Г¬ГҐГ°ГІГј.";
-
-Final2 = new Scene("ГЏГ®ГўГ»ГёГҐГ­ГЁГҐ");
-Final2.text = "Г’Г» Г­ГҐ ГЎГҐГ°ГҐГёГј ГІГ°ГіГЎГЄГі. Г„Г®ГҐГ§Г¦Г ГҐГёГј Г¤Г® Г°Г ГЎГ®ГІГ». ГЌГ Г·Г Г«ГјГ­ГЁГЄ Г°ГҐГёГЁГ« ГЇГ®ГўГ»Г±ГЁГІГј ГІГҐГЎГї.";
-
-Final3 = new Scene("ГЌГЁГ·ГҐГЈГ® Г­ГҐ Г¬ГҐГ­ГїГҐГІГ±Гї.");
-Final3.text = "Г“Г§Г­Г ГҐГёГј Гі ГЄГ®Г«Г«ГҐГЈ, Г·ГІГ® ГµГ®ГІГҐГ« Г­Г Г·Г Г«ГјГ­ГЁГЄ. Г€Г¤ГҐГёГј Г­Г  Г°Г ГЎГ®ГІГі Г§Г  ГЇГ®ГўГ»ГёГҐГ­ГЁГҐГ¬, Г­Г® Г®Г­ ГіГ¦ГҐ ГЇГҐГ°ГҐГ¤ГіГ¬Г Г«.";
-
-Final4 = new Scene("ГЏГ®Г­ГЁГ¦ГҐГ­ГЁГҐ.");
-Final4.text = "ГЌГЁГЄГ®Г¬Гі Г­ГҐ Г§ГўГ®Г­ГЁГёГј. Г‚Г®Г§ГўГ°Г Г№Г ГҐГёГјГ±Гї Г·ГҐГ°ГҐГ§ Г­ГҐГ¤ГҐГ«Гѕ ГЁГ§ Г®ГІГЇГіГ±ГЄГ  ГЁ ГіГ§Г­Г ГҐГёГј, Г·ГІГ® Г±ГЄГ®Г°Г® ГІГҐГЎГї ГЇГ®Г­ГЁГ§ГїГІ.";
-
-
-Scene1.outcome1 = Scene2;
-Scene1.outcome2 = Scene3;
-Scene2.outcome1 = Final1;
-Scene2.outcome2 = Final2;
-Scene3.outcome1 = Final3;
-Scene3.outcome2 = Final4;
-
-/*var allScenes = [Scene1, Scene2, Scene3, Final1, Final2, Final3, Final4];*/
-
-var currentScene;
-
-document.getElementById("MainText").style.display = "none";
-document.getElementById("buttonL").style.display = "none";
-document.getElementById("buttonR").style.display = "none";
-
-
-document.getElementById("newGame").onclick = function () {
-  currentScene = Scene1;
-  document.getElementById("Menu").style.display = "none";
-  document.getElementById("MainText").style.display = "block";
-  document.getElementById("buttonL").style.display = "initial";
-  document.getElementById("buttonR").style.display = "initial";
-  document.getElementById("MainText").innerHTML = currentScene.text;
-  document.getElementById("buttonL").value = currentScene.choice1;
-  document.getElementById("buttonR").value = currentScene.choice2;
+/* all the functions defined */
+function showMenu () {
+  document.getElementById("Menu").style.display = "block";
+  document.getElementById("MainText").style.display = "none";
+  document.getElementById("chooseButtons").style.display = "none";
+  document.getElementById("returnToMenu").style.display = "none";
+  document.getElementById("return").style.display = "none";
 };
 
-document.getElementById("continueGame").onclick = function () {
-  currentScene = readCookie("cookie");
+function showGameZone () {
   document.getElementById("Menu").style.display = "none";
   document.getElementById("MainText").style.display = "block";
-  document.getElementById("buttonL").style.display = "initial";
-  document.getElementById("buttonR").style.display = "initial";
-  document.getElementById("MainText").innerHTML = currentScene.text;
-  document.getElementById("buttonL").value = currentScene.choice1;
-  document.getElementById("buttonR").value = currentScene.choice2;
-}
-
-document.getElementById("buttonL").onclick = function () {
-  createCookie("testcookie", "kek", 1);
-  alert(readCookie("testcookie"));
-  currentScene = currentScene.outcome1;
-  changeScene();
+  document.getElementById("chooseButtons").style.display = "block";
 };
 
-document.getElementById("buttonR").onclick = function () {
-  createCookie("cookie", currentScene.outcome2, 1);
-  currentScene = currentScene.outcome2;
-  changeScene();
+function hideChooseButtons () {
+  document.getElementById("chooseButtons").style.display = "none";
 };
 
 function changeScene() {
   document.getElementById("MainText").innerHTML = currentScene.text;
+  document.getElementById("return").style.display = "initial";
   if (currentScene.outcome1 == null){
-    document.getElementById("buttonL").style.display = "none";
-    document.getElementById("buttonR").style.display = "none";
+    document.getElementById("chooseButtons").style.display = "none";
+    document.getElementById("return").style.display = "none";
     document.getElementById("returnToMenu").style.display = "initial";
   }
   else {
     document.getElementById("buttonL").value = currentScene.choice1;
     document.getElementById("buttonR").value = currentScene.choice2;
   };
-};
-
-document.getElementById("returnToMenu").style.display = "none";
-
-document.getElementById("returnToMenu").onclick = function () {
-  document.getElementById("MainText").style.display = "none";
-  document.getElementById("buttonL").style.display = "none";
-  document.getElementById("buttonR").style.display = "none";
-  document.getElementById("returnToMenu").style.display = "none";
-  document.getElementById("Menu").style.display = "block";
 };
 
 function createCookie(name,value,days) {
@@ -134,3 +55,98 @@ function readCookie(name) {
 function eraseCookie(name) {
 	createCookie(name,"",-1);
 }
+
+function Scene(name){
+  this.name = name;
+  this.text;
+  this.choice1;
+  this.choice2;
+  this.outcome1;
+  this.outcome2;
+};
+
+
+/* all the buttons defined */
+document.getElementById("continueGame").onclick = function () {
+  for (i = 0; i < allScenes.length; i++){
+    if (allScenes[i].name == readCookie("gameProgress")){
+      currentScene = allScenes[i];
+      break;
+    } else {
+      currentScene = Scene1;
+    };
+  };
+  showGameZone();
+  changeScene();
+};
+
+document.getElementById("newGame").onclick = function () {
+  currentScene = Scene1;
+  showGameZone();
+  changeScene();
+};
+
+document.getElementById("buttonL").onclick = function () {
+  currentScene = currentScene.outcome1;
+  createCookie("gameProgress", currentScene.name, 1)
+  changeScene();
+};
+
+document.getElementById("buttonR").onclick = function () {
+  currentScene = currentScene.outcome2;
+  createCookie("gameProgress", currentScene.name, 1)
+  changeScene();
+};
+
+document.getElementById("returnToMenu").onclick = function () {
+  showMenu();
+  eraseCookie("gameProgress");
+};
+
+document.getElementById("return").onclick = function () {
+  showMenu();
+};
+
+
+/* all the variables defined */
+Scene1 = new Scene("Scene1");
+Scene1.text = "Утро. Звонок от начальника. Он просит немедленно приехать на работу.";
+Scene1.choice1 = "Взять трубку.";
+Scene1.choice2 = "Продолжить спать.";
+
+Scene2 = new Scene("Scene2");
+Scene2.text = "Лениво собираешься и едешь. По дороге звонит телефон.";
+Scene2.choice1 = "Взять трубку.";
+Scene2.choice2 = "Перезвонить в оффисе.";
+
+Scene3 = new Scene("Scene3");
+Scene3.text = "У тебя выходной, ты не берешь трубку. Остаешься дома.";
+Scene3.choice1 = "Узнать у коллег, \n чего хотел начальник.";
+Scene3.choice2 = "Никому не звонить.";
+
+Final1 = new Scene("Final1");
+Final1.text = "Ты берешь трубку. Не замечаешь яму на дороге и вылетаешь на встречку. Смерть.";
+
+Final2 = new Scene("Final2");
+Final2.text = "Ты не берешь трубку. Доезжаешь до работы. Начальник решил повысить тебя.";
+
+Final3 = new Scene("Final3");
+Final3.text = "Узнаешь у коллег, что хотел начальник. Идешь на работу за повышением, но он уже передумал.";
+
+Final4 = new Scene("Final4");
+Final4.text = "Никому не звонишь. Возвращаешься через неделю из отпуска и узнаешь, что скоро тебя понизят.";
+
+
+Scene1.outcome1 = Scene2;
+Scene1.outcome2 = Scene3;
+Scene2.outcome1 = Final1;
+Scene2.outcome2 = Final2;
+Scene3.outcome1 = Final3;
+Scene3.outcome2 = Final4;
+
+var allScenes = [Scene1, Scene2, Scene3, Final1, Final2, Final3, Final4];
+
+var currentScene;
+
+/* start */
+showMenu();
